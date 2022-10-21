@@ -21,28 +21,14 @@
 <body data-color="user">
     <!--<div class="test">같은 페이지인데 억울하자너</div>-->
 
-    <script>
-        function dog(){
-            this.name="춘식이"
-            this.test = function(){
-                console.log("이게 안나와?")
-            }
-            return "시골똥개"
+<script>
+    function fibonacci(n) {
+        if (n <= 1) {
+            return 1;
         }
-
-        dog.say = function() {
-            console.log("왈왈")
-            return this
-        }
-
-        dog.eat = function(){
-            console.log("냠냠")
-            return this
-        }
-
-        let dog2 = new dog()
-        console.log(dog)
-        console.log(dog2.test())
-    </script>
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+    console.log(fibonacci(5))
+</script>
 </body>
 </html>
